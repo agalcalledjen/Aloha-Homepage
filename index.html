@@ -1,0 +1,141 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Use this meta tag to have responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- makes it compatible for IE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- link icons before Main Style to ensure it's loaded before to use in main style. -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+  <!-- Main Style - link css in separate file, avoid using <style> on the page since it cannot be used on multiple pgs unless copying and pasting.  Reset is ideally before main styling -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- link jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- link js -->
+  <script src="js/slideshow.js"></script>
+  <script src="js/app.js"></script>
+
+  <title>Aloha Apparel</title>
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      <div class="logo"><img src="./assets/images/aloha-logo.svg" alt="aloha-logo">
+      </div>
+      <div class="cart-icon">
+        <img src="./assets/images/cart-icon.svg" alt="cart-icon">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#shop">SHOP</a></li>
+          <li><a href="#featured">FEATURED</a></li>
+          <li><a href="#updates">UPDATES</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="new-collection">
+    <p>New Collection</p>
+    <p>Spring/Summer 2019</p>
+  </section>
+  <section class="about">
+    <div>
+      <h2><em>Hand-Crafted </em>Styles</h2>
+      <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of
+        products
+        or
+        sign-up for updates below.</p>
+    </div>
+  </section>
+  <div class="shop" id="shop">
+    <div class="item">
+      <!-- Use # in place of where a link is supposed to be and it will be automatically be taken to the top of the page if there is nothing after the #. Aka just # will refresh the page. -->
+      <a href="#">men's</a>
+    </div>
+    <div class="item">
+      <a href="#">trends</a>
+    </div>
+    <div class="item">
+      <a href="#">glasses</a>
+    </div>
+    <div class="item">
+      <a href="#">sale</a>
+    </div>
+    <div class="item">
+      <a href="#">bags</a>
+    </div>
+    <div class="item">
+      <a href="#">women's</a>
+    </div>
+  </div>
+  <div class="featured" id="featured">
+    <h2><em>Most-Loved </em>Products</h2>
+  </div>
+  <div class="updates" id="updates">
+    <h2><em>Sign-up for </em>Updates</h2>
+    <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style
+      tips
+      from our blog. Unsubscribe at any time.</p>
+
+    <form class="updates-form" method="POST" action="">
+      <div class="button">
+        <input type="email" placeholder="Your Email">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="contact-info">
+        <p>&copy; 2019 Aloha Apparel Co.
+          <br>Powered by HTML and CSS.</p>
+        <p>604-604-6040.
+          <a href="mailto:info@alohaapparel.com" class="link">info@alohaapparel.com</a></p>
+        <p class="address">1490 W Broadway
+          <br>Vancouver, BC, Canada</p>
+      </div>
+      <div class="contacts-icons">
+        <a href="https://facebook.com" target="_blank" class="icon-links">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="icon-links">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="icon-links">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.pinterest.com" target="_blank" class="icon-links">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <a href="https://plus.google.com/discover" target="_blank" class="icon-links">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+      </div>
+      <div class="contacts-names">
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Pinterest</li>
+          <li>Google+</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

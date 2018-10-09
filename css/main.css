@@ -1,0 +1,482 @@
+/* fonts */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway-Light.eot');
+  src: url('../assets/fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Raleway-Light.woff2') format('woff2'),
+    url('../assets/fonts/Raleway-Light.woff') format('woff'),
+    url('../assets/fonts/Raleway-Light.ttf') format('truetype'),
+    url('../assets/fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway-LightItalic.eot');
+  src: url('../assets/fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Raleway-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/Raleway-LightItalic.woff') format('woff'),
+    url('../assets/fonts/Raleway-LightItalic.ttf') format('truetype'),
+    url('../assets/fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway-Medium.eot');
+  src: url('../assets/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Raleway-Medium.woff') format('woff'),
+    url('../assets/fonts/Raleway-Medium.ttf') format('truetype'),
+    url('../assets/fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/PlayfairDisplay-Bold.eot');
+  src: url('../assets/fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../assets/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+    url('../assets/fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/PlayfairDisplay-Regular.eot');
+  src: url('../assets/fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../assets/fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('../assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+    url('../assets/fonts/PlayfairDisplay-Regular.svg#../assets/fonts/PlayfairDisplay-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/PlayfairDisplay-BoldItalic.eot');
+  src: url('../assets/fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+    url('../assets/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+    url('../assets/fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/PlayfairDisplay-Italic.eot');
+  src: url('../assets/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('../assets/fonts/PlayfairDisplay-Italic.woff') format('woff'),
+    url('../assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+    url('../assets/fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Main Styling */
+
+/* Elements */
+
+body {
+  margin: 0 auto;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+footer .link {
+  color: white;
+}
+
+/* Layout */
+
+/* Content Area */
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+  font-family: "Raleway";
+}
+
+.container.header {
+  background-color: white;
+  font-family: "Playfair Display";
+  color: #e2574c;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  order: 1;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.cart-icon {
+  order: 2;
+}
+
+.cart-icon img {
+  height: 50px;
+}
+
+nav {
+  order: 3;
+}
+
+.header nav ul {
+  list-style-type: none;
+  /* removes bullet pts */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  font-family: "Raleway";
+}
+
+.header nav ul li {
+  float: left;
+}
+
+.header nav ul li a {
+  display: block;
+  color: #e2574c;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  color: #b64036;
+}
+
+.new-collection {
+  /* combining imgs */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../assets/images/banner-girl.png"),
+    url("../assets/images/flower-bkgd.jpg");
+  /* ./ this directory here
+  ../ go to the parent directory 
+  It's better to use relative path instead of absolute path since ??? */
+
+  /* center and scale the image nicely, use commas to target each bg img */
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: left, center bottom
+    /* center 200px - to make girl go lower */
+    , center top;
+  background-size: cover, 200px
+    /* use rem instead since it will scale nicely - value/16 = rem value */
+    , cover;
+  /* not required since it is part of background and will not overflow automatically.
+  overflow: hidden; 
+  */
+  /*
+  overflow-y: scroll;
+  */
+  color: white;
+
+  /* full height */
+  height: 600px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.new-collection p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px #969696;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.new-collection p:nth-of-type(2) {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-size: 3rem;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 1px 1px 2px #969696;
+  margin: 0 auto;
+}
+
+.about {
+  color: black;
+  height: 300px;
+}
+
+.about div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop {
+  height: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.item {
+  background-size: cover;
+  height: 50%;
+  width: 25%;
+
+  color: white;
+  font-family: "Raleway";
+  font-size: 2em;
+  text-shadow: 1px 1px 2px #969696;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: #b64036
+}
+
+/* mens item */
+.item:nth-of-type(1) {
+  background-image: url("../assets/images/mens-category.jpg");
+  flex-grow: 2;
+}
+
+/* trends item */
+.item:nth-of-type(2) {
+  background-image: url("../assets/images/trends-category.jpg");
+}
+
+/* glasses item */
+.item:nth-of-type(3) {
+  background-image: url("../assets/images/glasses-category.jpg");
+}
+
+/* sale item */
+.item:nth-of-type(4) {
+  background-image: url("../assets/images/sale-category.jpg");
+}
+
+/* bags item */
+.item:nth-of-type(5) {
+  background-image: url("../assets/images/bags-category.jpg");
+}
+
+/* womens item */
+.item:nth-of-type(6) {
+  background-image: url("../assets/images/womens-category.jpg");
+  flex-grow: 2;
+}
+
+.featured {}
+
+.updates {
+  background-image: url("../assets/images/wave-bkgd.jpg");
+  background-size: cover;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+
+.updates-form {
+  margin: 0 auto;
+  width: 400px;
+  height: 60px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  height: 75%;
+}
+
+.button input {
+  outline: 0px;
+}
+
+.button input[type="email"] {
+  width: 100%;
+  border: 0;
+  font-size: 1rem;
+  color: grey;
+  margin-left: 20px;
+}
+
+.button input[type="submit"] {
+  width: 40%;
+  height: 85%;
+  background: #e9625b;
+  border: 0px;
+  border-radius: 30px;
+  margin-right: 3px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button input[type="submit"]:hover {
+  background: #b64036;
+}
+
+.footer {
+  background-color: #242424;
+  font-family: "Playfair Display";
+  color: white;
+  margin: 0 auto;
+
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 85%;
+  padding-left: 7%;
+  align-self: center;
+  text-align: left;
+}
+
+.address {
+  color: #969696;
+}
+
+.contacts-icons {
+  padding: 5% 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacts-icons div i {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+
+.icon-links {
+  color: white;
+  line-height: 2em;
+}
+
+.contacts-names {
+  font-family: "Raleway";
+  font-weight: 300;
+  padding-right: 7%;
+}
+
+.contacts-names ul {
+  height: 300px;
+  margin: 0 auto;
+  list-style-type: none;
+  line-height: 2em;
+  padding-left: 10%;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/*
+.contacts-names p {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+*/
+
+/* Breakpoints */
+
+@media screen and (min-width: 600px) {
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  /* .logo img {
+    height: 50px;
+  } */
+
+  .cart-icon {
+    order: 3;
+  }
+
+  /* .cart-icon img {
+    height: 50px;
+  } */
+
+  nav {
+    order: 2;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1240px) {
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  /* .logo img {
+    height: 50px;
+  } */
+
+  .cart-icon {
+    order: 3;
+  }
+
+  /* .cart-icon img {
+    height: 50px;
+  } */
+
+  nav {
+    order: 2;
+  }
+
+  .about div {
+    max-width: 50%;
+  }
+
+}
