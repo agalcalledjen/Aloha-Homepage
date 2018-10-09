@@ -1,0 +1,3 @@
+# Project 1 - Aloha Homepage
+
+This is a thoughtful write-up about my project...
