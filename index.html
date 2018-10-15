@@ -15,12 +15,19 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
 
+  <!-- Flickity CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <!-- Main Style - link css in separate file, avoid using <style> on the page since it cannot be used on multiple pgs unless copying and pasting.  Reset is ideally before main styling -->
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <!-- link jQuery -->
+  <!-- link jQuery CDN from Google -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Flickity JavaScript CDN -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
   <!-- link js -->
   <script src="js/slideshow.js"></script>
   <script src="js/app.js"></script>
@@ -59,7 +66,7 @@
         sign-up for updates below.</p>
     </div>
   </section>
-  <div class="shop" id="shop">
+  <section class="shop" id="shop">
     <div class="item">
       <!-- Use # in place of where a link is supposed to be and it will be automatically be taken to the top of the page if there is nothing after the #. Aka just # will refresh the page. -->
       <a href="#">men's</a>
@@ -79,9 +86,60 @@
     <div class="item">
       <a href="#">women's</a>
     </div>
-  </div>
+  </section>
   <div class="featured" id="featured">
     <h2><em>Most-Loved </em>Products</h2>
+    <!-- Flickity -->
+    <div class="main-carousel">
+      <figure class="carousel-cell">
+        <img src="assets/images/stretch-knit-dress.jpg">
+        <figcaption>dresses</figcaption>
+        <h3>Stretch Knit Dress</h3>
+        <p>$169.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/cotton-blue-shirt.jpg">
+        <figcaption>shirts</figcaption>
+        <h3>Cotton Blue Shirt</h3>
+        <p>$89.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/checked-stretch-dress.jpg">
+        <figcaption>dresses</figcaption>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/blue-hipster-backpack.jpg">
+        <figcaption>bags</figcaption>
+        <h3>Blue Hipster Backpack</h3>
+        <p>$69.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/demin-overall-shorts.jpg">
+        <figcaption>denim</figcaption>
+        <h3>Denim Overall Shorts</h3>
+        <p>$89.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/pink-dotted-dress.jpg">
+        <figcaption>dresses</figcaption>
+        <h3>Pink Dotted Dress</h3>
+        <p>$99.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/blue-silk-dress.jpg">
+        <figcaption>dresses</figcaption>
+        <h3>Blue Silk Dress</h3>
+        <p>$119.00</p>
+      </figure>
+      <figure class="carousel-cell">
+        <img src="assets/images/cotton-yellow-tshirt.jpg">
+        <figcaption>shirts</figcaption>
+        <h3>Cotton Yellow Tshirt</h3>
+        <p>$39.00</p>
+      </figure>
+    </div>
   </div>
   <div class="updates" id="updates">
     <h2><em>Sign-up for </em>Updates</h2>
@@ -135,7 +193,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -85,14 +85,41 @@
 
 /* Main Styling */
 
-/* Elements */
+/* --------- Elements --------- */
+h2 {
+  font-family: "Playfair Display";
+  font-size: 2.375rem;
+  margin: 0;
+}
 
+h2 em {
+  font-weight: 100;
+}
 
-/* Layout */
+h3 {
+  font-family: "Playfair Display";
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #e2574c;
+  margin: 1rem;
+}
+
+figure {
+  margin-top: 4rem;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  color: #969696;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/* --------- Layout --------- */
 html {
   font-family: "Raleway";
   /* 14px */
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 body {
@@ -107,18 +134,14 @@ body {
   /* font-family: "Raleway"; */
 }
 
-footer .link {
-  color: white;
-}
-
-/* Content Area */
+/* Header */
 .container.header {
   background-color: white;
   font-family: "Playfair Display";
   color: #e2574c;
-  margin: 10px;
+  /* margin: 13px 10px 0px 10px; */
+  padding: 0.875rem 0.75rem 0rem 0.75rem;
 
-  height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -128,14 +151,17 @@ footer .link {
 
 .logo {
   order: 1;
+  width: 25%;
+  text-align: left;
 }
 
 .logo img {
-  height: 50px;
+  height: 45px;
 }
 
 .cart-icon {
   order: 2;
+  width: 25% text-align: right;
 }
 
 .cart-icon img {
@@ -144,39 +170,108 @@ footer .link {
 
 nav {
   order: 3;
-  margin-top: 7px;
-  border-top: 1px solid #d7d7d7;
+  margin-top: 0.4375rem;
+  border-top: 0.0625rem solid #d7d7d7;
   width: 100%;
 }
 
 .header nav ul {
+  padding-inline-start: 0px;
   list-style-type: none;
   /* removes bullet pts */
-  margin: 0;
-  padding: 0;
+  /* margin: 13px; */
+  /* padding: 0; */
   font-family: "Raleway";
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-
-.header nav ul li {
-  float: left;
+  justify-content: center;
 }
 
 .header nav ul li a {
-  display: block;
+  padding: 1rem;
+  /* margin: 14px 0px; */
   color: #e2574c;
-  text-align: center;
-  padding: 16px;
+  /* text-align: center; */
+  /* padding: 16px; */
   text-decoration: none;
+  /* display: block; */
 }
 
 .header nav ul li a:hover {
   color: #b64036;
 }
 
+footer .link {
+  color: white;
+}
+
+.footer {
+  background-color: #242424;
+  font-family: "Playfair Display";
+  color: white;
+  margin: 0 auto;
+
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  width: 100%;
+}
+
+.address {
+  color: #969696;
+}
+
+.contacts-icons {
+  margin-top: 14px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacts-icons div i {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+
+.icon-links {
+  color: white;
+  padding: 0px 7px;
+}
+
+.contacts-names {
+  display: none;
+}
+
+.contacts-names ul {
+  height: 300px;
+  margin: 0 auto;
+  list-style-type: none;
+  line-height: 2em;
+  padding-left: 10%;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/*
+.contacts-names p {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+*/
+
+/* --------- Content Area --------- */
 .new-collection {
   /* combining imgs */
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
@@ -188,10 +283,11 @@ nav {
 
   /* center and scale the image nicely, use commas to target each bg img */
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: left, center bottom
+  background-position: left, center 4rem
     /* center 200px - to make girl go lower */
     , center top;
-  background-size: cover, 200px
+  background-size: cover, 150px
+    /* 35% */
     /* use rem instead since it will scale nicely - value/16 = rem value */
     , cover;
   /* not required since it is part of background and will not overflow automatically.
@@ -203,7 +299,7 @@ nav {
   color: white;
 
   /* full height */
-  height: 600px;
+  height: 400px;
   width: 100%;
 
   display: flex;
@@ -215,35 +311,48 @@ nav {
 .new-collection p:nth-of-type(1) {
   /* font-family: "Raleway"; */
   font-weight: normal;
-  font-size: 1rem;
-  text-shadow: 1px 1px 2px #969696;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 3px #757373;
   text-transform: uppercase;
+  line-height: 3rem;
+
   margin: 0 auto;
 }
 
-.new-collection p:nth-of-type(2) {
+/* Spring/Summer  */
+.new-collection h2 {
   font-family: "Playfair Display";
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 2.5rem;
   /* offset-x | offset-y | blur-radius | color */
-  text-shadow: 1px 1px 2px #969696;
+  text-shadow: 2px 2px 3px #757373;
   margin: 0 auto;
 }
 
 .about {
   color: black;
-  height: 300px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
 }
 
 .about div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* padding: 20px; */
+  width: 100%;
 }
 
+.about div p {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 2.25rem;
+}
+
+/* Shop */
 .shop {
-  height: 500px;
+  height: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -253,13 +362,13 @@ nav {
 
 .item {
   background-size: cover;
-  height: 50%;
-  width: 25%;
+  height: 48.5vw;
+  /* viewport width: % of full viewport width. 10vw will resolve to 10% of current viewport width, or 48px on a phone thqt is 480px wide. css-tricks/fun-viewport-units */
 
   color: white;
-  font-family: "Raleway";
-  font-size: 2em;
-  text-shadow: 1px 1px 2px #969696;
+  /* font-family: "Raleway"; */
+  font-size: 1.625rem;
+  text-shadow: 2px 2px 3px #757373;
   text-transform: uppercase;
 
   display: flex;
@@ -278,49 +387,109 @@ nav {
 
 /* mens item */
 .item:nth-of-type(1) {
-  background-image: url("../assets/images/mens-category.jpg");
-  flex-grow: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/mens-category.jpg");
+  width: 100vh;
+  border-bottom: 0.6rem solid white;
 }
 
 /* trends item */
 .item:nth-of-type(2) {
-  background-image: url("../assets/images/trends-category.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/trends-category.jpg");
+  width: 49.5vh;
+  border-bottom: 0.6rem solid white;
 }
 
 /* glasses item */
 .item:nth-of-type(3) {
-  background-image: url("../assets/images/glasses-category.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/glasses-category.jpg");
+  width: 49.5vh;
+  border-bottom: 0.6rem solid white;
 }
 
 /* sale item */
 .item:nth-of-type(4) {
-  background-image: url("../assets/images/sale-category.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/sale-category.jpg");
+  width: 49.5vh;
 }
 
 /* bags item */
 .item:nth-of-type(5) {
-  background-image: url("../assets/images/bags-category.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/bags-category.jpg");
+  width: 49.5vh;
 }
 
 /* womens item */
 .item:nth-of-type(6) {
-  background-image: url("../assets/images/womens-category.jpg");
-  flex-grow: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/womens-category.jpg");
+  width: 100vh;
+  border-top: 0.6rem solid white;
 }
 
-.featured {}
+/* Featured */
+.featured {
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+/* Flickity carousel */
+.main-carousel img {
+  max-width: 100%;
+  /* does not go bigger than container it's in. */
+  height: auto;
+  /* helps maintain aspect ratio of img */
+}
+
+.main-carousel .carousel-cell {
+  width: 100%;
+}
+
+.carousel-cell p {
+  color: #969696;
+}
+
+.flickity-page-dots {
+  bottom: -40px;
+}
+
+
+
+/* Updates */
 .updates {
   background-image: url("../assets/images/wave-bkgd.jpg");
   background-size: 100% 100%;
   /* img stretches to cover entire content area */
-  margin: 10px auto;
-  padding: 10px 0;
+  margin-bottom: 0.6rem;
+  padding: 10px;
+
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.updates h2 {
+  color: white;
+  text-shadow: 2px 2px 3px #757373;
+}
+
+.updates h2 em {
+  color: white;
+  text-shadow: 2px 2px 3px #757373;
+}
+
+.updates p {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 2.25rem;
+  color: white;
+  text-shadow: 2px 2px 3px #757373;
 }
 
 .updates-form {
   margin: 0 auto;
-  width: 400px;
+  width: 365px;
   height: 60px;
 }
 
@@ -330,6 +499,7 @@ nav {
   background: white;
   border-radius: 30px;
   height: 75%;
+  margin-top: 1.5rem;
 }
 
 .button input {
@@ -340,6 +510,7 @@ nav {
   width: 100%;
   border: 0;
   font-size: 1rem;
+  font-weight: 100;
   color: grey;
   margin-left: 20px;
 }
@@ -360,74 +531,25 @@ nav {
   background: #b64036;
 }
 
-.footer {
-  background-color: #242424;
-  font-family: "Playfair Display";
-  color: white;
-  margin: 0 auto;
 
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.contact-info {
-  width: 100%;
-}
-
-.address {
-  color: #969696;
-}
-
-.contacts-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-
-.contacts-icons div i {
-  display: inline-block;
-  margin-right: 0.75em;
-}
-
-.icon-links {
-  color: white;
-  line-height: 2em;
-  padding: 0px 10px;
-}
-
-.contacts-names {
-  display: none;
-}
-
-
-
-/*
-.contacts-names p {
-  display: inline-block;
-  margin-right: 0.75em;
-}
-*/
 
 /* --------- Breakpoints --------- */
 
 /* Tablet-friendly */
 @media screen and (min-width: 600px) {
 
-  body {
-    font-size: 0.8rem;
+  /* --------- Elements --------- */
+
+  /* --------- Layout --------- */
+  html {
+    /* 16px */
+    font-size: 1rem;
   }
 
+  /* Header */
   .container.header {
-    height: 125px;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 25px;
-    justify-content: space-around;
+    margin: 10px;
   }
 
   .logo {
@@ -458,6 +580,10 @@ nav {
     justify-content: center;
   }
 
+  .header nav ul li a {
+    padding: 10px;
+  }
+
   /* Footer */
   .footer {
     flex-direction: row;
@@ -472,7 +598,7 @@ nav {
   }
 
   .contacts-icons {
-    padding: 5% 0;
+    margin-top: 0;
 
     flex-direction: column;
   }
@@ -489,18 +615,70 @@ nav {
     display: block;
   }
 
-  .contacts-names ul {
-    height: 300px;
-    margin: 0 auto;
-    list-style-type: none;
-    line-height: 2em;
-    padding-left: 10%;
-    text-align: left;
+  /* --------- Content --------- */
+  /* .new-collection {
+    background-position: left, 50% 270%, center top;
+    background-size: cover, 20%, cover;
+  } */
 
-    display: flex;
+  /* Spring/Summer */
+  .new-collection {
+    background-position: left, center 60px, center top;
+    background-size: cover, 150px, cover;
+  }
+
+  .about {
+    height: 320px;
+  }
+
+  .about div {
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: center; */
+    padding: 20px;
+    width: 65%;
+  }
+
+  /* Shop */
+  .item {
+    height: 150px;
+  }
+
+  /* mens item */
+  .item:nth-of-type(1) {
+    width: 48.5%;
+  }
+
+  /* trends item */
+  .item:nth-of-type(2) {
+    width: 24%;
+  }
+
+  /* glasses item */
+  .item:nth-of-type(3) {
+    width: 24.5%;
+  }
+
+  /* sale item */
+  .item:nth-of-type(4) {
+    width: 24%;
+  }
+
+  /* bags item */
+  .item:nth-of-type(5) {
+    width: 23%;
+  }
+
+  /* womens item */
+  .item:nth-of-type(6) {
+    width: 50%;
+    border-top: 0;
+  }
+
+  /* Featured */
+  /* Flickity carousel */
+  .main-carousel .carousel-cell {
+    width: 50%;
   }
 
 }
@@ -508,17 +686,16 @@ nav {
 /* Desktop-friendly */
 @media screen and (min-width: 1240px) {
 
+  /* --------- Elements --------- */
+
+  /* --------- Layout --------- */
   body {
     font-size: 0.8rem;
   }
 
   .container.header {
-    height: 125px;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 25px;
-    justify-content: space-around;
+    margin: 10px;
   }
 
   .logo {
@@ -567,6 +744,8 @@ nav {
   }
 
   .contacts-icons {
+    margin-top: 0;
+
     flex-direction: column;
   }
 
@@ -582,18 +761,11 @@ nav {
     padding-right: 7%;
   }
 
-  .contacts-names ul {
-    height: 300px;
-    margin: 0 auto;
-    list-style-type: none;
-    line-height: 2em;
-    padding-left: 10%;
-    text-align: left;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  /* --------- Content --------- */
+  .new-collection {
+    background-position: left, center 60px, center top;
+    background-size: cover, 150px, cover;
   }
+
 
 }
