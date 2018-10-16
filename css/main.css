@@ -107,6 +107,8 @@ h3 {
 
 figure {
   margin-top: 3.75rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 figcaption {
@@ -128,6 +130,7 @@ html {
 }
 
 body {
+  color: #2d2d2d;
   margin: 0 auto;
   /* font-family: "Raleway"; */
   text-align: center;
@@ -460,6 +463,7 @@ footer .link {
 
 .main-carousel .carousel-cell {
   width: 100%;
+  height: auto;
 }
 
 /* default full-width cells */
@@ -497,6 +501,14 @@ footer .link {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.newsletter>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 20px; */
+  width: 100%;
 }
 
 .newsletter h2 {
@@ -785,7 +797,7 @@ footer .link {
 
   .contact-info {
     width: 85%;
-    padding-left: 7%;
+    padding-left: 2%;
     align-self: center;
     text-align: left;
   }
@@ -808,6 +820,10 @@ footer .link {
     padding-right: 7%;
   }
 
+  .contacts-names ul {
+    padding-left: 1rem;
+  }
+
   /* --------- Content --------- */
   .new-collection {
     background-position: left, center 60px, center top;
@@ -820,8 +836,41 @@ footer .link {
   }
 
   /* Featured */
+  .featured {
+    height: 440px;
+    padding: 95px 3px 120px 3px;
+  }
+
   /* Flickity carousel */
   .main-carousel .carousel-cell {
     width: 25%;
+    height: auto;
+  }
+
+  .main-carousel img {
+    height: 36vh;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    margin-bottom: 0.5rem;
+    align-items: center;
+  }
+
+  .newsletter>div {
+    padding: 20px;
+    max-width: 58%;
+  }
+
+  .newsletter-email {
+    width: 36vw;
+  }
+
+  .button {
+    height: 75%;
+  }
+
+  .button input[type="submit"] {
+    width: 40%;
   }
 }
