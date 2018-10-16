@@ -101,18 +101,23 @@ h3 {
   font-weight: 100;
   font-size: 1.5rem;
   color: #e2574c;
-  margin: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 figure {
-  margin-top: 4rem;
+  margin-top: 3.75rem;
 }
 
 figcaption {
   font-size: 0.75rem;
   color: #969696;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
+}
+
+i {
+  font-size: 0.875rem;
 }
 
 /* --------- Layout --------- */
@@ -126,6 +131,7 @@ body {
   margin: 0 auto;
   /* font-family: "Raleway"; */
   text-align: center;
+
 }
 
 .container {
@@ -140,7 +146,7 @@ body {
   font-family: "Playfair Display";
   color: #e2574c;
   /* margin: 13px 10px 0px 10px; */
-  padding: 0.875rem 0.75rem 0rem 0.75rem;
+  padding: 1rem 0.875rem 0rem 0.875rem;
 
   display: flex;
   flex-direction: row;
@@ -156,12 +162,13 @@ body {
 }
 
 .logo img {
-  height: 45px;
+  height: 47px;
 }
 
 .cart-icon {
   order: 2;
-  width: 25% text-align: right;
+  width: 25%;
+  text-align: right;
 }
 
 .cart-icon img {
@@ -189,7 +196,7 @@ nav {
 }
 
 .header nav ul li a {
-  padding: 1rem;
+  padding: 0.5rem 1.125rem;
   /* margin: 14px 0px; */
   color: #e2574c;
   /* text-align: center; */
@@ -223,12 +230,16 @@ footer .link {
   width: 100%;
 }
 
+.contact-info p:nth-of-type(1) {
+  margin: 0 auto;
+}
+
 .address {
   color: #969696;
 }
 
 .contacts-icons {
-  margin-top: 14px;
+  margin-top: 1.5rem;
 
   display: flex;
   flex-direction: row;
@@ -243,7 +254,7 @@ footer .link {
 
 .icon-links {
   color: white;
-  padding: 0px 7px;
+  padding: 0 0.65rem;
 }
 
 .contacts-names {
@@ -283,7 +294,7 @@ footer .link {
 
   /* center and scale the image nicely, use commas to target each bg img */
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: left, center 4rem
+  background-position: left, center 4.25rem
     /* center 200px - to make girl go lower */
     , center top;
   background-size: cover, 150px
@@ -305,7 +316,7 @@ footer .link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .new-collection p:nth-of-type(1) {
@@ -348,6 +359,7 @@ footer .link {
   font-size: 1.125rem;
   font-weight: 100;
   line-height: 2.25rem;
+  padding: 0 0.5rem;
 }
 
 /* Shop */
@@ -362,7 +374,7 @@ footer .link {
 
 .item {
   background-size: cover;
-  height: 48.5vw;
+  height: 50vw;
   /* viewport width: % of full viewport width. 10vw will resolve to 10% of current viewport width, or 48px on a phone thqt is 480px wide. css-tricks/fun-viewport-units */
 
   color: white;
@@ -388,49 +400,54 @@ footer .link {
 /* mens item */
 .item:nth-of-type(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/mens-category.jpg");
-  width: 100vh;
+  width: 100vw;
   border-bottom: 0.6rem solid white;
 }
 
 /* trends item */
 .item:nth-of-type(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/trends-category.jpg");
-  width: 49.5vh;
+  width: 49.25vw;
   border-bottom: 0.6rem solid white;
 }
 
 /* glasses item */
 .item:nth-of-type(3) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/glasses-category.jpg");
-  width: 49.5vh;
+  width: 49.25vw;
   border-bottom: 0.6rem solid white;
 }
 
 /* sale item */
 .item:nth-of-type(4) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/sale-category.jpg");
-  width: 49.5vh;
+  width: 49.25vw;
 }
 
 /* bags item */
 .item:nth-of-type(5) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/bags-category.jpg");
-  width: 49.5vh;
+  width: 49.25vw;
 }
 
 /* womens item */
 .item:nth-of-type(6) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/womens-category.jpg");
-  width: 100vh;
+  width: 100vw;
   border-top: 0.6rem solid white;
 }
 
 /* Featured */
 .featured {
-  height: 670px;
+  height: 660px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 15px;
+}
+
+.featured h2 {
+  padding-bottom: 7px;
 }
 
 /* Flickity carousel */
@@ -445,6 +462,19 @@ footer .link {
   width: 100%;
 }
 
+/* default full-width cells */
+/* .carousel-cell {
+  width: 100%;
+  height: 160px;
+  margin-right: 10px;
+} */
+/* default full-width cells */
+.carousel-cell {
+  width: 100%;
+  height: auto;
+
+}
+
 .carousel-cell p {
   color: #969696;
 }
@@ -456,7 +486,7 @@ footer .link {
 
 
 /* Updates */
-.updates {
+.newsletter {
   background-image: url("../assets/images/wave-bkgd.jpg");
   background-size: 100% 100%;
   /* img stretches to cover entire content area */
@@ -469,17 +499,18 @@ footer .link {
   justify-content: center;
 }
 
-.updates h2 {
+.newsletter h2 {
   color: white;
   text-shadow: 2px 2px 3px #757373;
 }
 
-.updates h2 em {
+.newsletter h2 em {
   color: white;
   text-shadow: 2px 2px 3px #757373;
 }
 
-.updates p {
+.newsletter p {
+  padding: 0 0.625rem;
   font-size: 1.125rem;
   font-weight: 100;
   line-height: 2.25rem;
@@ -487,9 +518,9 @@ footer .link {
   text-shadow: 2px 2px 3px #757373;
 }
 
-.updates-form {
+.newsletter-email {
   margin: 0 auto;
-  width: 365px;
+  width: 86vw;
   height: 60px;
 }
 
@@ -498,9 +529,14 @@ footer .link {
   align-items: center;
   background: white;
   border-radius: 30px;
-  height: 75%;
+  height: 70%;
   margin-top: 1.5rem;
 }
+
+/* .active {
+  box-shadow: 0 0 1rem #969696;
+  box-shadow: 
+} */
 
 .button input {
   outline: 0px;
@@ -509,15 +545,16 @@ footer .link {
 .button input[type="email"] {
   width: 100%;
   border: 0;
+  margin-left: 1.5rem;
+  font-family: "Raleway";
   font-size: 1rem;
   font-weight: 100;
-  color: grey;
-  margin-left: 20px;
+  color: #969696;
 }
 
 .button input[type="submit"] {
-  width: 40%;
-  height: 85%;
+  width: 27%;
+  height: 86%;
   background: #e9625b;
   border: 0px;
   border-radius: 30px;
@@ -549,7 +586,7 @@ footer .link {
   /* Header */
   .container.header {
     align-items: center;
-    margin: 10px;
+    padding: 1.0625rem 1.375rem;
   }
 
   .logo {
@@ -581,7 +618,7 @@ footer .link {
   }
 
   .header nav ul li a {
-    padding: 10px;
+    padding: 1.125rem;
   }
 
   /* Footer */
@@ -628,7 +665,8 @@ footer .link {
   }
 
   .about {
-    height: 320px;
+    height: 270px;
+    /* height: 320px; */
   }
 
   .about div {
@@ -636,42 +674,50 @@ footer .link {
     flex-direction: column;
     justify-content: center; */
     padding: 20px;
-    width: 65%;
+    max-width: 65%;
   }
 
   /* Shop */
   .item {
-    height: 150px;
+    height: 310px;
+    /* height: 150px; */
   }
 
   /* mens item */
   .item:nth-of-type(1) {
-    width: 48.5%;
+    /* width: 48.5%; */
+    width: 50vw;
+    border-bottom: 0.5rem solid white;
   }
 
   /* trends item */
   .item:nth-of-type(2) {
-    width: 24%;
+    width: 24vw;
+    border-bottom: 0.5rem solid white;
   }
 
   /* glasses item */
   .item:nth-of-type(3) {
-    width: 24.5%;
+    width: 24.5vw;
+    border-bottom: 0.5rem solid white;
   }
 
   /* sale item */
   .item:nth-of-type(4) {
-    width: 24%;
+    /* width: 24%; */
+    width: 24.75vw;
   }
 
   /* bags item */
   .item:nth-of-type(5) {
-    width: 23%;
+    /* width: 23%; */
+    width: 24.5vw;
   }
 
   /* womens item */
   .item:nth-of-type(6) {
-    width: 50%;
+    width: 49.25vw;
+    /* width: 50%; */
     border-top: 0;
   }
 
@@ -689,30 +735,31 @@ footer .link {
   /* --------- Elements --------- */
 
   /* --------- Layout --------- */
-  body {
+  /* body {
     font-size: 0.8rem;
-  }
+  } */
 
   .container.header {
-    align-items: center;
-    margin: 10px;
+    /* align-items: center; */
+    /* margin: 10px; */
+    /* padding: 0.5rem 0.875rem; */
   }
 
   .logo {
     order: 1;
   }
 
-  /* .logo img {
-    height: 50px;
-  } */
+  .logo img {
+    height: 3.75rem;
+  }
 
   .cart-icon {
     order: 3;
   }
 
-  /* .cart-icon img {
-    height: 50px;
-  } */
+  .cart-icon img {
+    height: 3.75rem;
+  }
 
   nav {
     order: 2;
@@ -726,9 +773,9 @@ footer .link {
     justify-content: center;
   }
 
-  .about div {
+  /* .about div {
     max-width: 50%;
-  }
+  } */
 
   /* Footer */
   .footer {
@@ -764,8 +811,17 @@ footer .link {
   /* --------- Content --------- */
   .new-collection {
     background-position: left, center 60px, center top;
-    background-size: cover, 150px, cover;
+    background-size: cover, 250px, contain;
+    height: 550px;
   }
 
+  .new-collection h2 {
+    font-size: 4rem;
+  }
 
+  /* Featured */
+  /* Flickity carousel */
+  .main-carousel .carousel-cell {
+    width: 25%;
+  }
 }

@@ -8,6 +8,7 @@ $(document).ready(function () {
     autoPlay: 3000, // {Number}
     // advance cells ever {Number} milliseconds
     // 1500 will advance cells every 1.5 seconds
-    prevNextButtons: false
+    prevNextButtons: false,
+    groupCells: true
   }); // end of Flickity carousel
 }); // end of doc ready

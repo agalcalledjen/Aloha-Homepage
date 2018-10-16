@@ -43,5 +43,30 @@ $(document).ready(function () {
     // options
     cellAlign: 'left',
     contain: true
+  }); // end of carousel
+
+  // $('#newsletter-form').on('click', function (event) {
+  //   event.preventDefault();
+  //   if ($('#newsletter-form-input').val() == '') {
+  //     $('.button').addClass('.active');
+  //   } else {}
+  // };)
+
+  // $("#newsletter-form").mouseenter(function () {
+  //   $(".button").css("box-shadow", "0 0 1rem #969696");
+  // });
+
+  // Newsletter Email Subscription 
+  $('#newsletter-form').on('submit', function (event) {
+    event.preventDefault();
+    if ($('#newsletter-form-input').val() == '') {
+      alert('Please enter a valid email address.');
+    } else {
+      alert('Thanks for subscribing!');
+    }
   });
+
+  $("#newsletter-form").on('click', function () {
+    $(".button").css("box-shadow", "0 0 1rem #969696");
+  }); // end of email subscription
 }); // end of doc ready
