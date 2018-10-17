@@ -144,6 +144,18 @@ body {
 }
 
 /* Header */
+header {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  /* Set to fixed position */
+  top: 0;
+  /* Position at the top of the page */
+  width: 100%;
+  /* Full width */
+  z-index: 8000;
+}
+
 .container.header {
   background-color: white;
   font-family: "Playfair Display";
@@ -287,6 +299,7 @@ footer .link {
 
 /* --------- Content Area --------- */
 .new-collection {
+  margin-top: 119px;
   /* combining imgs */
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("../assets/images/banner-girl.png"),
@@ -681,6 +694,7 @@ footer .link {
 
   /* Spring/Summer */
   .new-collection {
+    margin-top: 82px;
     background-position: left, center 60px, center top;
     background-size: cover, 150px, cover;
   }
