@@ -125,14 +125,12 @@ i {
 /* --------- Layout --------- */
 html {
   font-family: "Raleway";
-  /* 14px */
   font-size: 0.875rem;
 }
 
 body {
   color: #2d2d2d;
   margin: 0 auto;
-  /* font-family: "Raleway"; */
   text-align: center;
 
 }
@@ -140,7 +138,6 @@ body {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  /* font-family: "Raleway"; */
 }
 
 /* Header */
@@ -148,11 +145,8 @@ header {
   overflow: hidden;
   background-color: white;
   position: fixed;
-  /* Set to fixed position */
   top: 0;
-  /* Position at the top of the page */
   width: 100%;
-  /* Full width */
   z-index: 8000;
 }
 
@@ -160,14 +154,12 @@ header {
   background-color: white;
   font-family: "Playfair Display";
   color: #e2574c;
-  /* margin: 13px 10px 0px 10px; */
   padding: 1rem 0.875rem 0rem 0.875rem;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .logo {
@@ -200,9 +192,6 @@ nav {
 .header nav ul {
   padding-inline-start: 0px;
   list-style-type: none;
-  /* removes bullet pts */
-  /* margin: 13px; */
-  /* padding: 0; */
   font-family: "Raleway";
 
   display: flex;
@@ -212,12 +201,8 @@ nav {
 
 .header nav ul li a {
   padding: 0.5rem 1.125rem;
-  /* margin: 14px 0px; */
   color: #e2574c;
-  /* text-align: center; */
-  /* padding: 16px; */
   text-decoration: none;
-  /* display: block; */
 }
 
 .header nav ul li a:hover {
@@ -291,59 +276,33 @@ footer .link {
   align-content: center;
 }
 
-/*
-.contacts-names p {
-  display: inline-block;
-  margin-right: 0.75em;
-}
-*/
-
 /* --------- Content Area --------- */
 .new-collection {
   margin-top: 119px;
-  /* combining imgs */
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("../assets/images/banner-girl.png"),
     url("../assets/images/flower-bkgd.jpg");
-  /* ./ this directory here
-  ../ go to the parent directory 
-  It's better to use relative path instead of absolute path since ??? */
-
-  /* center and scale the image nicely, use commas to target each bg img */
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: left, center 4.25rem
-    /* center 200px - to make girl go lower */
-    , center top;
-  background-size: cover, 150px
-    /* 35% */
-    /* use rem instead since it will scale nicely - value/16 = rem value */
-    , cover;
-  /* not required since it is part of background and will not overflow automatically.
-  overflow: hidden; 
-  */
-  /*
-  overflow-y: scroll;
-  */
+  background-position: left, center 4.25rem, center top;
+  background-size: cover, 150px, cover;
+
   color: white;
 
-  /* full height */
   height: 400px;
   width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* text-align: center; */
+
 }
 
 .new-collection p:nth-of-type(1) {
-  /* font-family: "Raleway"; */
   font-weight: normal;
   font-size: 1.25rem;
   text-shadow: 2px 2px 3px #757373;
   text-transform: uppercase;
   line-height: 3rem;
-
   margin: 0 auto;
 }
 
@@ -352,7 +311,6 @@ footer .link {
   font-family: "Playfair Display";
   font-weight: normal;
   font-size: 2.5rem;
-  /* offset-x | offset-y | blur-radius | color */
   text-shadow: 2px 2px 3px #757373;
   margin: 0 auto;
 }
@@ -369,7 +327,6 @@ footer .link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding: 20px; */
   width: 100%;
 }
 
@@ -393,10 +350,8 @@ footer .link {
 .item {
   background-size: cover;
   height: 50vw;
-  /* viewport width: % of full viewport width. 10vw will resolve to 10% of current viewport width, or 48px on a phone thqt is 480px wide. css-tricks/fun-viewport-units */
 
   color: white;
-  /* font-family: "Raleway"; */
   font-size: 1.625rem;
   text-shadow: 2px 2px 3px #757373;
   text-transform: uppercase;
@@ -471,9 +426,7 @@ footer .link {
 /* Flickity carousel */
 .main-carousel img {
   max-width: 100%;
-  /* does not go bigger than container it's in. */
   height: auto;
-  /* helps maintain aspect ratio of img */
 }
 
 .main-carousel .carousel-cell {
@@ -481,17 +434,9 @@ footer .link {
   height: auto;
 }
 
-/* default full-width cells */
-/* .carousel-cell {
-  width: 100%;
-  height: 160px;
-  margin-right: 10px;
-} */
-/* default full-width cells */
 .carousel-cell {
   width: 100%;
   height: auto;
-
 }
 
 .carousel-cell p {
@@ -502,13 +447,10 @@ footer .link {
   bottom: -40px;
 }
 
-
-
-/* Updates */
+/* Newsletter */
 .newsletter {
   background-image: url("../assets/images/wave-bkgd.jpg");
   background-size: 100% 100%;
-  /* img stretches to cover entire content area */
   margin-bottom: 0.6rem;
   padding: 10px;
 
@@ -522,7 +464,6 @@ footer .link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding: 20px; */
   width: 100%;
 }
 
@@ -560,11 +501,6 @@ footer .link {
   margin-top: 1rem;
 }
 
-/* .active {
-  box-shadow: 0 0 1rem #969696;
-  box-shadow: 
-} */
-
 .button input {
   outline: 0px;
 }
@@ -599,7 +535,7 @@ footer .link {
 
 /* --------- Breakpoints --------- */
 
-/* Tablet-friendly */
+/* --------- Tablet-friendly --------- */
 @media screen and (min-width: 600px) {
 
   /* --------- Elements --------- */
@@ -607,7 +543,6 @@ footer .link {
 
   /* --------- Layout --------- */
   html {
-    /* 16px */
     font-size: 1rem;
   }
 
@@ -621,28 +556,15 @@ footer .link {
     order: 1;
   }
 
-  /* .logo img {
-    height: 50px;
-  } */
-
   .cart-icon {
     order: 3;
   }
-
-  /* .cart-icon img {
-    height: 50px;
-  } */
 
   nav {
     order: 2;
     margin-top: 0px;
     border-top: 0px;
     width: 50%;
-  }
-
-  .header nav ul {
-    /* font-size: 0.8rem; */
-    justify-content: center;
   }
 
   .header nav ul li a {
@@ -666,7 +588,6 @@ footer .link {
 
   .contacts-icons {
     margin-top: 0;
-
     flex-direction: column;
   }
 
@@ -688,11 +609,6 @@ footer .link {
   }
 
   /* --------- Content --------- */
-  /* .new-collection {
-    background-position: left, 50% 270%, center top;
-    background-size: cover, 20%, cover;
-  } */
-
   /* Spring/Summer */
   .new-collection {
     margin-top: 82px;
@@ -710,11 +626,8 @@ footer .link {
   }
 
   .about div {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     padding: 20px;
-    width: 55%;
+    width: 85%;
   }
 
   /* Shop */
@@ -724,46 +637,34 @@ footer .link {
 
   /* mens item */
   .item:nth-of-type(1) {
-    /* width: 48.5%; */
-    /* width: 49.5vw; */
     width: 49.5%;
     border-bottom: 0.4rem solid white;
   }
 
   /* trends item */
   .item:nth-of-type(2) {
-    /* width: 24vw; */
-    /* width: 23%; */
     width: 24%;
     border-bottom: 0.4rem solid white;
   }
 
   /* glasses item */
   .item:nth-of-type(3) {
-    /* width: 24.5vw; */
-    /* width: 24%; */
     width: 24.5%;
     border-bottom: 0.4rem solid white;
   }
 
   /* sale item */
   .item:nth-of-type(4) {
-    /* width: 24%; */
-    /* width: 24.25vw; */
     width: 24.25%;
   }
 
   /* bags item */
   .item:nth-of-type(5) {
-    /* width: 23%; */
-    /* width: 24.25vw; */
     width: 24.25%;
   }
 
   /* womens item */
   .item:nth-of-type(6) {
-    /* width: 49.5vw; */
-    /* width: 50%; */
     width: 49.5%;
     border-top: 0;
   }
@@ -771,7 +672,6 @@ footer .link {
   /* Featured */
   .featured {
     height: 600px;
-    /* padding: 0px 3px 70px 3px; */
     padding: 10px 0px 60px 0px;
   }
 
@@ -820,46 +720,17 @@ footer .link {
   /* --------- Elements --------- */
 
   /* --------- Layout --------- */
-  /* body {
-    font-size: 0.8rem;
-  } */
-
-
   /* Header */
   .container.header {
-    /* align-items: center; */
-    /* margin: 10px; */
-    /* padding: 0.5rem 0.875rem; */
-    /* padding: 1.0625rem 1.375rem; */
     padding: 1rem 1.5rem;
-  }
-
-  .logo {
-    order: 1;
   }
 
   .logo img {
     height: 3.8rem;
   }
 
-  .cart-icon {
-    order: 3;
-  }
-
   .cart-icon img {
     height: 3.8rem;
-  }
-
-  nav {
-    order: 2;
-    margin-top: 0px;
-    border-top: 0px;
-    width: 50%;
-  }
-
-  .header nav ul {
-    /* font-size: 0.8rem; */
-    justify-content: center;
   }
 
   .header nav ul li a {
@@ -867,39 +738,10 @@ footer .link {
     padding: 1.125rem;
   }
 
-  /* .about div {
-    max-width: 50%;
-  } */
-
   /* Footer */
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .contact-info {
-    width: 85%;
-    padding-left: 2%;
-    align-self: center;
-    text-align: left;
-  }
-
-  .contacts-icons {
-    margin-top: 0;
-
-    flex-direction: column;
-  }
-
   .icon-links {
     line-height: 2em;
     padding: 0px;
-  }
-
-  .contacts-names {
-    display: block;
-    font-family: "Raleway";
-    font-weight: 300;
-    padding-right: 7%;
   }
 
   .contacts-names ul {
@@ -909,7 +751,6 @@ footer .link {
   /* --------- Content --------- */
   /* Spring/Summer */
   .new-collection {
-    background-position: left, center 60px, center top;
     background-size: cover, 250px, contain;
     height: 550px;
   }
@@ -923,6 +764,11 @@ footer .link {
     height: 270px;
   }
 
+  .about div {
+    padding: 20px;
+    width: 45%;
+  }
+
   /* Shop */
   .item {
     height: 24.5vw;
@@ -934,7 +780,6 @@ footer .link {
 
   /* mens item */
   .item:nth-of-type(1) {
-    /* width: 48.5%; */
     width: 49vw;
     border-bottom: 0.5rem solid white;
   }
@@ -953,20 +798,17 @@ footer .link {
 
   /* sale item */
   .item:nth-of-type(4) {
-    /* width: 24%; */
     width: 24.5vw;
   }
 
   /* bags item */
   .item:nth-of-type(5) {
-    /* width: 23%; */
     width: 23.75vw;
   }
 
   /* womens item */
   .item:nth-of-type(6) {
     width: 49vw;
-    /* width: 50%; */
     border-top: 0;
   }
 
