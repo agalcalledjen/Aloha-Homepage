@@ -69,4 +69,11 @@ $(document).ready(function () {
   $("#newsletter-form").on('click', function () {
     $(".button").css("box-shadow", "0 0 1rem #969696");
   }); // end of email subscription
+
+  // Fix "Skip Link" Focus in Webkit
+  $(function () {
+    $("a[href^='#']").not("a[href='#']").click(function () {
+      $("#" + $(this).attr("href").slice(1) + "").focus();
+    });
+  }); // end of skip link
 }); // end of doc ready
