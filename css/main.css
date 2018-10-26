@@ -131,6 +131,12 @@ i {
   font-size: 0.875rem;
 }
 
+.reader-display {
+  color: #db3a26;
+  text-decoration: none;
+  font-family: 'Playfair Display';
+}
+
 /* --------- Layout --------- */
 html {
   font-family: 'Raleway';
