@@ -5,10 +5,7 @@ $(document).ready(function () {
     cellAlign: 'left',
     contain: true,
     wrapAround: true,
-    autoPlay: 4000, // {Number}
-    // advance cells ever {Number} milliseconds
-    // 1500 will advance cells every 1.5 seconds
+    autoPlay: 4000,
     prevNextButtons: false,
-    // groupCells: true
   }); // end of Flickity carousel
 }); // end of doc ready

@@ -1,5 +1,9 @@
 # Project 1 - Aloha Homepage
 
+This project is a responsive homepage created with HTML, CSS and a bit of JS.
+
+![Image of Aloha Apparel](https://github.com/nejmal/project-01/blob/master/alohaapparel.png)
+
 This is a project produced from the following lessons from Week 1 to Week 2:
 
 1. Intro to Your Computer & HTML
