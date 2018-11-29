@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+  const $newsletterForm = $('#newsletter-form');
+
   /* 
   Smooth scroll from CSS Tricks.
   Select all links with hashes
@@ -51,16 +54,16 @@ $(document).ready(function () {
   // });
 
   // Newsletter Email Subscription 
-  $('#newsletter-form').on('submit', function (event) {
+  $newsletterForm.on('submit', function (event) {
     event.preventDefault();
-    if ($('#newsletter-form-input').val() == '') {
+    if ($('#updates-form-input').val() == '') {
       alert('Please enter a valid email address.');
     } else {
       alert('Thanks for subscribing!');
     }
   });
 
-  $("#newsletter-form").on('click', function () {
+  $newsletterForm.on('click', function () {
     $(".button").css("box-shadow", "0 0 1rem #969696");
   }); // end of email subscription
 
