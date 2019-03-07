@@ -179,6 +179,6 @@ Used icons from [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
 
 ## Author
 
-[Jennifer Lam](https://github.com/nejmal), Web Developer student at RED Academy.
+[Jennifer Lam](https://github.com/nejmal), Web Developer student at [RED Academy](https://redacademy.com/vancouver/).
 
 Let's connect on [LinkedIn](https://www.linkedin.com/in/jenniferlam-/).
