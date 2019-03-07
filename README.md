@@ -58,7 +58,7 @@ This was produced from the following lessons from Week 1 to Week 2:
 
 Below are the subsequent learning outcomes.
 
-### HTML5
+#### HTML5
 
 New elements for outlining and sectioning.
 
@@ -76,7 +76,7 @@ New elements for outlining and sectioning.
 </header>
 ```
 
-### **`<head></head>`**
+#### **`<head></head>`**
 
 - `<meta>`: use for responsive design
 - `<link></link>`: links external css files and CDNs
@@ -86,7 +86,7 @@ New elements for outlining and sectioning.
   - [jQuery CDN from Google](https://developers.google.com/speed/libraries/#jquery)
   - [Flickity JavaScript CDN](https://flickity.metafizzy.co/#cdn)
 
-### **`<body></body>`**
+#### **`<body></body>`**
 
 Font files and put declaration at top of css page to use it throughout.
 
@@ -103,7 +103,7 @@ Media queries (start with mobile-first and modify for larger widths).
 }
 ```
 
-### **`<header></header>`**
+#### **`<header></header>`**
 
 Use .container for header and footer of page.
 
@@ -117,7 +117,7 @@ Order can be used to create various layouts for media queries.
 order: #;
 ```
 
-### **`<section></section>`**
+#### **`<section></section>`**
 
 Flexbox assists with creating easy to code layouts.
 
@@ -131,19 +131,19 @@ Flexbox assists with creating easy to code layouts.
 - `<form></form>`
   - `<input></input>`
 
-#### `<section class="new-collection"></section>`
+##### `<section class="new-collection"></section>`
 
 ```css
 background-image: linear-gradient(), url();
 ```
 
-#### `<section class="about"></section>`
+##### `<section class="about"></section>`
 
 - justify-content
 - align-items
 - text-align
 
-#### `<section class="shop"></section>`
+##### `<section class="shop"></section>`
 
 - Should have used the following flex properties for the items, one class for the wide items and a second class for the smaller items.
   ```css
@@ -154,18 +154,18 @@ background-image: linear-gradient(), url();
   flex: flex-grow, flex-shrink and flex-basis;
   ```
 
-#### `<section class="featured"></section>`
+##### `<section class="featured"></section>`
 
 - jQuery plugin: [Flickity](https://flickity.metafizzy.co/)
 
-#### `<section class="newsletter"></section>`
+##### `<section class="newsletter"></section>`
 
 - Created a button using `<input></input>`.
 - js was applied to div of input.
   - css box-shadow would appear when input type="email" was clicked.
 - js was added to submit input.
 
-### **`<footer></footer>`**
+#### **`<footer></footer>`**
 
 Displaying none hides an element.
 
