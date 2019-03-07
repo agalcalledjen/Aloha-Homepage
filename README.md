@@ -39,7 +39,9 @@ Open the index.html file in a browser and enjoy!
 
 ## Personal Learnings
 
-Web Developer (Project 1): This was produced from the following lessons from Week 1 to Week 2:
+### Web Developer (Project 1)
+
+This was produced from the following lessons from Week 1 to Week 2:
 
 1. Intro to Your Computer & HTML
 2. Intro to CSS & CSS Styling
