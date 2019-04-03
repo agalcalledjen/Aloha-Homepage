@@ -17,7 +17,7 @@ git clone < project directory .git >
 Go to project directory.
 
 ```
-cd project-01
+cd < project directory >
 ```
 
 Open the index.html file in a browser and enjoy!
