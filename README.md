@@ -2,7 +2,7 @@
 
 A mobile-first responsive homepage for Aloha Apparel Co. and it includes interactivity for feature products.
 
-![Image of Aloha Apparel](https://github.com/nejmal/project-01/blob/master/aloha-homepage.png)
+![Image of Aloha Apparel](https://github.com/agalcalledjen/Aloha-Homepage/blob/master/aloha-homepage.png)
 
 ---
 
