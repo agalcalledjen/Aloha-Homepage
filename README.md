@@ -181,4 +181,4 @@ Used icons from [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
 
 [Jennifer Lam](https://github.com/agalcalledjen), Full-Stack Developer student at [RED Academy](https://redacademy.com/vancouver/).
 
-Let's connect on [LinkedIn](https://www.linkedin.com/in/jenniferlam-/).
+Let's connect on [LinkedIn](https://www.linkedin.com/in/agalcalledjen/).
