@@ -1,6 +1,6 @@
 # Aloha Homepage 👗🏝
 
-A mobile-first responsive homepage for Aloha Apparel Co. and it includes interactivity for feature products.
+A [mobile-first responsive homepage](https://agalcalledjen.github.io/Aloha-Homepage) for Aloha Apparel Co. and it includes interactivity for feature products.
 
 ![Image of Aloha Apparel](https://github.com/agalcalledjen/Aloha-Homepage/blob/master/aloha-homepage.png)
 
